@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For Alislahish-PCM1808
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Alislahish_PCM1808	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+selectMode	KEYWORD2
+selectFormat	KEYWORD2
+begin		KEYWORD2
+powerDownAndReset	KEYWORD2
+resume	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FADE_TIME_OUT	LITERAL1
+
