@@ -60,7 +60,7 @@ void Alislahish_PCM1808::selectFormat(AudioInterfaceFormats format){
 * begin sampling at a default (Master 256) interface mode and default I2S data format
 */
 void Alislahish_PCM1808::begin(){
-	begin(InterfaceModes::MASTER_256, AudioInterfaceFormats::I2S);	
+	begin(InterfaceModes::MASTER_384, AudioInterfaceFormats::I2S);	
 }
 
 /**

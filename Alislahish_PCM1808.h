@@ -140,9 +140,9 @@ class Alislahish_PCM1808 : public ICUsingMCP23017
 		AudioInterfaceFormats _format;
 
 		//hardware connects - control
-		uint8_t _FMTpin; // pin 12
-		uint8_t _MD1pin; //	pin 11
-		uint8_t _MD0pin; // pin 10
+		uint8_t _FMTpin; // PCM1808 pin 12
+		uint8_t _MD1pin; //	PCM1808 pin 11
+		uint8_t _MD0pin; // PCM1808 pin 10
 
 		/*
 		connect this pin to the input of an AND gate
@@ -150,9 +150,9 @@ class Alislahish_PCM1808 : public ICUsingMCP23017
 		*/
 		uint8_t _SCKIMASKpin;
 		//i2s hardware connects 
-		uint8_t _LRCKpin; // pin 7
-		uint8_t _BCKpin; // pin 8
-		uint8_t _DOUTpin; // pin 9
+		uint8_t _LRCKpin; // PCM1808 pin 7
+		uint8_t _BCKpin; // PCM1808 pin 8
+		uint8_t _DOUTpin; // PCM1808 pin 9
 
 };
 
