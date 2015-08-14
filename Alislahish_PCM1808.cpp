@@ -15,6 +15,9 @@
 **********************************************************************/
 #include "Alislahish_PCM1808.h"
 
+
+Alislahish_PCM1808::Alislahish_PCM1808(){}
+
 /**
 * constructor using pins
 */

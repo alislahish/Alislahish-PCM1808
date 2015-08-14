@@ -119,6 +119,7 @@ enum class AudioInterfaceFormats{
 class Alislahish_PCM1808 : public ICUsingMCP23017 
 {
 	public:
+		Alislahish_PCM1808();
 		Alislahish_PCM1808(uint8_t FMTpin, uint8_t MD1pin, uint8_t MD0pin, uint8_t SCKIMASKpin,
 						   uint8_t LRCKpin, uint8_t BCKpin, uint8_t DOUTpin);
 		//selectSamplingFrequency(PCMSamplingFrequencies freq);
