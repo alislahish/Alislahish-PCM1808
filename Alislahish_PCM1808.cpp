@@ -83,7 +83,14 @@ void Alislahish_PCM1808::begin(InterfaceModes mode, AudioInterfaceFormats format
 */
 void Alislahish_PCM1808::powerDownAndReset(){
 	ICUsingMCP23017::digitalWrite(_SCKIMASKpin, LOW);
+	_isConverting=false;
+}
 
+/**
+* is the PCM1808 currently making ADC conversions?
+*/
+bool Alislahish_PCM1808::isConverting(){
+	return _isConverting;
 }
 
 /**
@@ -91,6 +98,7 @@ void Alislahish_PCM1808::powerDownAndReset(){
 */
 void Alislahish_PCM1808::resume(){
 	ICUsingMCP23017::digitalWrite(_SCKIMASKpin, HIGH);
+	_isConverting=true;
 }
 
 

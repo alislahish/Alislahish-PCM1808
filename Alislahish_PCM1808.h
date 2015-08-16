@@ -132,6 +132,8 @@ class Alislahish_PCM1808 : public ICUsingMCP23017
 		void powerDownAndReset();
 		void resume();
 
+		bool isConverting();
+
 	private:
 		void setPinModes();
 		void setPins();
@@ -139,6 +141,7 @@ class Alislahish_PCM1808 : public ICUsingMCP23017
 		//PCMSamplingFrequencies _fs;
 		InterfaceModes _mode;
 		AudioInterfaceFormats _format;
+		bool _isConverting = false;
 
 		//hardware connects - control
 		uint8_t _FMTpin; // PCM1808 pin 12
