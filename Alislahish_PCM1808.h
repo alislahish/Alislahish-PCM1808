@@ -101,6 +101,7 @@ inline long getSamplingHz(PCMSamplingFrequencies freq){
 	}
 }
 
+#define NUM_INTERFACE_MODES 4
 //Supported interface modes
 enum class InterfaceModes{
 	SLAVE = 0x0, 		//Slave mode (256fs, 384fs, 512fs autodetect):	MD1 LOW, MD0 LOW
@@ -109,6 +110,7 @@ enum class InterfaceModes{
 	MASTER_256 = 0x3	//Master mode (256 fs):							MD1 HIGH, MD0 HIGH
 };
 
+#define NUM_AUDIO_INTERFACE_FORMATS 2
 //Supported audio data formats 
 enum class AudioInterfaceFormats{
 	I2S = 0x0, //I^2S, 24-bit (FMT pin LOW)
@@ -125,6 +127,8 @@ class Alislahish_PCM1808 : public ICUsingMCP23017
 		//selectSamplingFrequency(PCMSamplingFrequencies freq);
 		void selectMode(InterfaceModes mode);
 		void selectFormat(AudioInterfaceFormats format);
+		InterfaceModes getMode();
+		AudioInterfaceFormats getFormat();
 		
 		void begin();
 		void begin(InterfaceModes mode, AudioInterfaceFormats format);

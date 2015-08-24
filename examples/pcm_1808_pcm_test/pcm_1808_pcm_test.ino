@@ -75,7 +75,7 @@
 #include <ICUsingMCP23017.h>
 #include <Alislahish_PCM1808.h>
 #include <Alislahish_PLL1705.h>
-#include <i2s.h>
+
 
 //PLL1705 - MCP23017
 #define FS1_PIN 8 //GPB0 - pin 1
@@ -84,10 +84,6 @@
 #define CSEL_PIN 11 //GPB3 -pin 4
 
 //PCM1808
-    //I2S - direct ESP8266 GPIO connections
-#define DOUT_PIN 3
-#define BCK_PIN 15
-#define WS_PIN 2
     //CONTROL - MCP23017
 #define FMT_PIN 12 //GPB4 - pin 5
 #define MD1_PIN 13 //GPB5 - pin 6
