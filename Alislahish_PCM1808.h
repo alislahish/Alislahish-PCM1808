@@ -160,7 +160,7 @@ class Alislahish_PCM1808 : public ICUsingMCP23017
 		//i2s hardware connects 
 		uint8_t _LRCKpin; // PCM1808 pin 7
 		uint8_t _BCKpin; // PCM1808 pin 8
-		uint8_t _DOUTpin; // PCM1808 pin 9
+		uint8_t _DINpin; // PCM1808 pin 9
 
 };
 
