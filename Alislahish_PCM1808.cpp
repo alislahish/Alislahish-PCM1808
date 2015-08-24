@@ -22,14 +22,14 @@ Alislahish_PCM1808::Alislahish_PCM1808(){}
 * constructor using pins
 */
 Alislahish_PCM1808::Alislahish_PCM1808(uint8_t FMTpin, uint8_t MD1pin, uint8_t MD0pin, uint8_t SCKIMASKpin,
-						   uint8_t LRCKpin, uint8_t BCKpin, uint8_t DOUTpin)
+						   uint8_t LRCKpin, uint8_t BCKpin, uint8_t DINpin)
 	:	_FMTpin(FMTpin), 
 		_MD1pin(MD1pin),
 		_MD0pin(MD0pin),
 		_SCKIMASKpin(SCKIMASKpin),
 		_LRCKpin(LRCKpin),
 		_BCKpin(BCKpin),
-		_DOUTpin(DOUTpin)
+		_DINpin(DINpin)
 {
 }
 
@@ -116,9 +116,6 @@ void Alislahish_PCM1808::setPinModes(){
 	ICUsingMCP23017::pinMode(_MD1pin, OUTPUT);
 	ICUsingMCP23017::pinMode(_MD0pin, OUTPUT);
 	ICUsingMCP23017::pinMode(_SCKIMASKpin, OUTPUT);
-	ICUsingMCP23017::pinMode(_LRCKpin, OUTPUT);
-	ICUsingMCP23017::pinMode(_BCKpin, OUTPUT);
-	ICUsingMCP23017::pinMode(_DOUTpin, OUTPUT);
 }
 
 /**
