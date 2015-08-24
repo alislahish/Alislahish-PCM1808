@@ -76,6 +76,10 @@
 #include <Alislahish_PCM1808.h>
 #include <Alislahish_PLL1705.h>
 
+#define BCK_PIN 13
+#define WS_PIN 14
+#define DIN_PIN 12
+
 
 //PLL1705 - MCP23017
 #define FS1_PIN 8 //GPB0 - pin 1
@@ -92,7 +96,7 @@
 #define SCLK_ENABLE_PIN 15//GPB7 - pin 8
 
 Alislahish_PLL1705 pll(CSEL_PIN, FS1_PIN, FS2_PIN, SR_PIN);
-Alislahish_PCM1808 pcm(FMT_PIN, MD1_PIN, MD0_PIN, SCLK_ENABLE_PIN, WS_PIN, BCK_PIN, DOUT_PIN);
+Alislahish_PCM1808 pcm(FMT_PIN, MD1_PIN, MD0_PIN, SCLK_ENABLE_PIN, WS_PIN, BCK_PIN, DIN_PIN);
 
 Adafruit_MCP23017 mcp;
 uint8_t mcpAddr = 0;
